@@ -1,0 +1,45 @@
+{% extends "portfolio/base.html" %}
+
+{% load static %}
+
+{% block content %}
+<br>
+<div class="container text-left">
+<h6>
+<a href="https://stepik.org" target="_blank">
+    <img src="{% static 'portfolio/stepik_logo.svg' %}" height="50" title="Stepik">
+</a>
+    это образовательная онлайн платформа, на которой я начал изучение Python в 2021 году.
+    За это время я прошел курсы на разные темы: Linux, HTML и CSS, SQL, Django, - но основным направлением всегда оставался Python.</h6>
+
+<h2 class="mt-5 text-left">Навыки:</h2>
+<hr>
+    <h4>Python 3
+        <a href="https://stepik.org/cert/969906" target="_blank">
+        <img src="{% static 'portfolio/Sertificate.png' %}" height="32" title="Сертификат BEEGEEK 1"></a>
+        <a href="https://stepik.org/cert/1341435" target="_blank">
+        <img src="{% static 'portfolio/Sertificate.png' %}" height="32" title="Сертификат BEEGEEK 2"></a>
+        <a href="https://stepik.org/cert/1824085" target="_blank">
+        <img src="{% static 'portfolio/Sertificate.png' %}" height="32" title="Сертификат BEEGEEK 3"></a>
+        <a href="https://stepik.org/cert/1582865" target="_blank">
+        <img src="{% static 'portfolio/Sertificate.png' %}" height="32" title="Сертификат BioInformatics Institute"></a>
+        <a href="https://stepik.org/cert/1596193" target="_blank">
+        <img src="{% static 'portfolio/Sertificate.png' %}" height="32" title="Сертификат Илья Фофанов"></a>
+    </h4>
+<hr>
+    <h4>
+        SQL
+        <a href="https://stepik.org/cert/1523595" target="_blank">
+        <img src="{% static 'portfolio/Sertificate.png' %}" height="32" title="Сертификат ДВФУ"></a>
+    </h4>
+<hr>
+    <h4>
+        Django 3
+    </h4>
+<hr>
+    <h4>
+        HTML
+    </h4>
+<hr>
+</div>
+{% endblock %}
