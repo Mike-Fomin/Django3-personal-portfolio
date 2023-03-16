@@ -20,10 +20,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-hm_c^d5hrj+bsz%%^yneszur+46&j1#0fza1r0hz*$1e(jb^r&'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -126,3 +126,8 @@ MEDIA_ROOT = BASE_DIR / 'media/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+try:
+    from .local_settings import *
+except ImportError:
+    print('local_settings.py unavailable')
